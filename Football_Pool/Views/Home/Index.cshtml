@@ -1,11 +1,23 @@
 ﻿@{
+
     ViewBag.Title = "Home Page";
-}
+
+} 
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>Football Pool 2019</h1>
+    <p class="lead">Weekly Football Pool is a app to keep track of your football pool picks</p>
+    <div class="row">
+        <div class="col-md-2">
+           <a href="@Url.Action("Index", "Login")" class="btn btn-primary btn-large btn-block">
+               <i class="icon-pencil icon-white"></i>
+               <span><strong>Login &raquo;</strong></span>
+               </a>
+        </div>
+        <div class="col-md-2">
+            <p class="text-left"><a href="#" class="btn btn-primary btn-lg">Sign Up &raquo;</a></p>
+        </div>
+    </div>
 </div>
 
 <div class="row">
